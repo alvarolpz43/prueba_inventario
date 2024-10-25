@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/cardBackground"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <!-- LinearLayout para organizar el contenido -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/nombreProduc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del producto"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/primaryText"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Cantidad del producto -->
+        <TextView
+            android:id="@+id/cantidadProduc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad: 0"
+            android:textSize="16sp"
+            android:textColor="@color/secondaryText"
+            android:layout_marginBottom="4dp" />
+
+
+
+        <!-- Categoría del producto -->
+        <TextView
+            android:id="@+id/categoriaProduc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría: General"
+            android:textSize="16sp"
+            android:textColor="@color/secondaryText"
+            android:layout_marginBottom="4dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad Solicitada"
+                />
+        <EditText
+            android:id="@+id/cantSoli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            />
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Pedido"
+            />
+<!--        <Button-->
+<!--            android:id="@+id/btnEnviarCarrito"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Enviar Carrito" />-->
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
